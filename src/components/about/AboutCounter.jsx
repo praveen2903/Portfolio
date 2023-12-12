@@ -2,36 +2,36 @@ import { useCountUp } from 'react-countup';
 import CounterItem from './CounterItem';
 
 const AboutCounter = () => {
-	useCountUp({ ref: 'experienceCounter', end: 12, duration: 2 });
-	useCountUp({ ref: 'githubStarsCounter', end: 20, duration: 2 });
-	useCountUp({ ref: 'feedbackCounter', end: 92, duration: 2 });
-	useCountUp({ ref: 'projectsCounter', end: 77, duration: 2 });
+	useCountUp({ ref: 'ProjectsCounter', end: 28, duration: 2 });
+	useCountUp({ ref: 'B.TechPercentage', end: 88, duration: 2 });
+	useCountUp({ ref: 'BlogsCounter', end: 5, duration: 5 });
+	useCountUp({ ref: 'SkillsCounter', end: 20, duration: 3 });
 
 	return (
 		<div className="mt-10 sm:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm">
 			<div className="font-general-medium container mx-auto py-20 block sm:flex sm:justify-between items-center">
 				<CounterItem
-					title="Years of experience"
-					counter={<span id="experienceCounter" />}
+					title="ProjectsCounter"
+					counter={<span id="ProjectsCounter" />}
 					measurement=""
 				/>
 
 				<CounterItem
-					title="Stars on GitHub"
-					counter={<span id="githubStarsCounter" />}
-					measurement="k+"
-				/>
-
-				<CounterItem
-					title="Positive feedback"
-					counter={<span id="feedbackCounter" />}
+					title="B.TechPercentage"
+					counter={<span id="B.TechPercentage" />}
 					measurement="%"
 				/>
 
 				<CounterItem
-					title="Projects completed"
-					counter={<span id="projectsCounter" />}
-					measurement="%"
+					title="Blogs Counter"
+					counter={<span id="BlogsCounter" />}
+					measurement=""
+				/>
+
+				<CounterItem
+					title="Skills learned"
+					counter={<span id="SkillsCounter" />}
+					measurement="+"
 				/>
 			</div>
 		</div>

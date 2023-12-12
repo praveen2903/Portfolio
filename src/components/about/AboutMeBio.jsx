@@ -14,7 +14,7 @@ const AboutMeBio = () => {
 			<div className="font-general-regular w-full sm:w-3/4 text-left">
 				{aboutMe.map((bio) => (
 					<p
-						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
+						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg text-justify"
 						key={bio.id}
 					>
 						{bio.bio}

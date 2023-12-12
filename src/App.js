@@ -6,12 +6,14 @@ import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
+import { ToastContainer } from 'react-toastify';
 
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
+const Milestones=lazy(()=>import('./pages/Milestones.jsx'));
 
 
 function App() {
@@ -32,12 +34,15 @@ function App() {
 
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
+							<Route path="achievements" element={<Milestones/>} />
 						</Routes>
 					</Suspense>
 					<AppFooter />
 				</Router>
 				<UseScrollToTop />
 			</div>
+			<ToastContainer position="top-right" bodyClassName="text-center font-bold text-blue-900"/>
+
 		</AnimatePresence>
 	);
 }
