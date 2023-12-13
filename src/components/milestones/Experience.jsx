@@ -39,7 +39,7 @@ const Experience = () => {
   };
 
   return (
-    <div className='mx-auto max-w-screen-md'>
+    <div className='mx-auto mt-14 max-w-screen-md'>
       <div className='text-2xl text-primary-dark dark:text-primary-light font-bold flex items-center justify-center mb-5'>
         My Accomplishments
       </div>
@@ -56,14 +56,14 @@ const Experience = () => {
                   .slick-prev:before {
                       color: #0369a1;
                       font-size: 30px;
-                      margin-left: 8px;
+                      margin-right:10px;
                   }
 
                   /* Right Arrow */
                   .slick-next:before {
                       color: #0369a1;
                       font-size: 30px;
-                      margin-right: 8px;
+                      margin-left:10px;
                   }
 
                   /* Ensure arrows are visible on small screens */

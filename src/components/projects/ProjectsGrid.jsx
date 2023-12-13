@@ -97,26 +97,35 @@ const ProjectsGrid = () => {
 				{selectProject
 					? selectProjectsByCategory.map((project) => (
 							<ProjectSingle
+								image={project.image}
 								title={project.title}
-								category={project.category}
-								image={project.img}
+								description={project.description}
+								gitlink={project.gitlink}
+								deploylink={project.deploylink}
+								icons={project.icons}
 								key={project.id}
 							/>
 					  ))
 					: searchProject
 					? searchProjectsByTitle.map((project) => (
 							<ProjectSingle
+								image={project.image}
 								title={project.title}
-								category={project.category}
-								image={project.img}
+								description={project.description}
+								gitlink={project.gitlink}
+								deploylink={project.deploylink}
+								icons={project.icons}
 								key={project.id}
 							/>
 					  ))
 					: projects.map((project) => (
 							<ProjectSingle
+								image={project.image}
 								title={project.title}
-								category={project.category}
-								image={project.img}
+								description={project.description}
+								gitlink={project.gitlink}
+								deploylink={project.deploylink}
+								icons={project.icons}
 								key={project.id}
 							/>
 					  ))}

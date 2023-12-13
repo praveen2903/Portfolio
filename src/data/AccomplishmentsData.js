@@ -2,7 +2,7 @@ import mlblog from '../images/experience/internship.jpg'
 import numpyblog from '../images/experience/azure.png'
 import pandasblog from '../images/experience/salesforce.png'
 import firebase from '../images/experience/frontend.png'
-import tailwindcss from '../images/brands/tailwindcss.avif'
+import tailwindcss from '../images/experience/powerbi.png'
 
 const AccomplishmentsData = [
 	{

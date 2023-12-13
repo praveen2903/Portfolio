@@ -4,7 +4,7 @@ const ExperienceData = [
 		id: 1,
 		title: 'Project',
 		img: require('../images/achievements/hackathonproject.png'),
-		description:"We have participated in the 24-hour hackathon in V.R.Siddhartha college and done placement project using Full stack Development. In the team of four, I have contributed in Front end Development. ",
+		description:"We have participated in the 24-hour hackathon in V.R.Siddhartha college and done placement project using Full stack Development. In the team of four, I have contributed in Front end Development.  We have done an Full stack development project contains Reactjs, nodejs, Express js and database as MongoDB.Here student could login and register and attend interviews and the college could track them, When he uploads them in application.",
 		link:"https://placement-hub-six.vercel.app/",
 	},
 	{

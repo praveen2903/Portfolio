@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import HireMeModal from '../HireMeModal';
 import { motion } from 'framer-motion';
-import logo from '../../images/profile.png'
+import logo from '../../images/logo.png'
 import Button from '../reusable/Button';
 
 const AppHeader = () => {
@@ -45,7 +45,7 @@ const AppHeader = () => {
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
 						<Link to="/" className='text-3xl font-bold font-serif flex gap-5'>
-							<img src={logo} alt='praveen' className='h-[100px] w-[80px] rounded-full' />
+							<img src={logo} alt='praveen' className='h-[60px] w-[60px] rounded-full' />
 							<div className='mt-6'>
 								{activeTheme === 'dark' ? (
 									<p className="w-36 text-black">Praveen</p>

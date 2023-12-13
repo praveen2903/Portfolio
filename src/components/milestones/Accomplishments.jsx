@@ -39,7 +39,7 @@ const Accomplishments = () => {
   };
 
   return (
-    <div className='mx-auto max-w-screen-md'>
+    <div className='mx-auto mt-10 max-w-screen-md'>
       <div className='text-2xl text-primary-dark dark:text-primary-light font-bold flex items-center justify-center mb-5'>
         My Work Experience
       </div>
