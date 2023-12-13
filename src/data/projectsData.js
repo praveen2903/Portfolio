@@ -22,7 +22,7 @@ const projectsData = [
 		image:require('../images/projects/web-2.png'),
 		deploylink:'https://weatherapp29.vercel.app/',
 		icons:[BiLogoReact,BiLogoTailwindCss,TiWeatherCloudy],
-		category:"Web Development",
+		category:"Web Application",
 	},
 	{
 		id:3,
@@ -52,7 +52,7 @@ const projectsData = [
 		image:require('../images/projects/web-3.png'),
 		deploylink:'https://globalnewsapplication.vercel.app/',
 		icons:[BiLogoReact,BiLogoTailwindCss],
-		category:"Web Development",
+		category:"Web Application",
 	},
 	{
 		id:6,
@@ -62,7 +62,7 @@ const projectsData = [
 		image:require('../images/projects/web-4.png'),
 		deploylink:'https://courseapplication.vercel.app/',
 		icons:[BiLogoReact,BiLogoTailwindCss],
-		category:"Web Development",
+		category:"Web Application",
 	},
 	{
 		id:7,
@@ -72,7 +72,7 @@ const projectsData = [
 		image:require('../images/projects/web-5.png'),
 		deploylink:'https://prismatic-heliotrope-d676e0.netlify.app/',
 		icons:[BiLogoReact,BiLogoTailwindCss],
-		category:"Web Development",
+		category:"Web Application",
 	},
 	{
 		id:8,
@@ -82,7 +82,7 @@ const projectsData = [
 		image:require('../images/projects/web-6.png'),
 		deploylink:'https://placement-hub-six.vercel.app/',
 		icons:[BiLogoReact,BiLogoTailwindCss,BiLogoMongodb,BiLogoNodejs],
-		category:"Web Development",
+		category:"Web Application",
 	},
 	{
 		id:9,
