@@ -12,7 +12,7 @@ const projectsData = [
 		image:require('../images/projects/web-1.png'),
 		deploylink:'https://imagegallery29.vercel.app/',
 		icons:[BiLogoReact, BiLogoCss3, BiLogoFirebase],
-		category:"Web Development",
+		category:"Web Application",
 	},
 	{
 		id:2,
@@ -42,7 +42,7 @@ const projectsData = [
 		image:require('../images/projects/power-1.png'),
 		deploylink:'https://app.fabric.microsoft.com/groups/me/reports/054df2b7-1284-4dc7-82ba-35f0d598cfa1/ReportSectione719ef80db76ae2815d3?experience=power-bi',
 		icons:[SiMicrosoftexcel ],
-		category:"PowerBi",
+		category:"PowerBI",
 	},
 	{
 		id:5,

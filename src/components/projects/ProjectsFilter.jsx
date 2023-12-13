@@ -1,8 +1,8 @@
 const selectOptions = [
 	'Web Application',
 	'Machine Learning',
-	'UI/UX Design',
-	'Power BI',
+	'UI/UX Designing',
+	'PowerBI',
 ];
 
 const ProjectsFilter = ({ setSelectProject }) => {
