@@ -10,7 +10,7 @@ import {
    
   export default function AboutClientSingle({image,title,description,link}) {
 	return (
-	  <Card className="w-full max-w-[26rem] shadow-lg mb-4 text-lg text-justify">
+	  <Card className="w-full max-w-[26rem] shadow-lg mb-4 text-lg text-justify p-5">
 		<CardHeader floated={false} color="blue-gray">
 		  <img
 			src={image}
