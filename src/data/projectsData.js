@@ -92,7 +92,7 @@ const projectsData = [
 		image:require('../images/projects/ui-project-2.jpg'),
 		deploylink:'https://unique-sable-f229dd.netlify.app/',
 		icons:[IoLogoFigma],
-		category:"UI/UX Development",
+		category:"UI/UX Designing",
 	},
 	{
 		id:10,
@@ -102,7 +102,7 @@ const projectsData = [
 		image:require('../images/projects/ui-project-3.jpg'),
 		deploylink:'https://unique-sable-f229dd.netlify.app/',
 		icons:[IoLogoFigma],
-		category:"UI/UX Development",
+		category:"UI/UX Designing",
 	},
 	{
 		id:11,
@@ -112,7 +112,7 @@ const projectsData = [
 		image:require('../images/projects/ui-project-4.jpg'),
 		deploylink:'https://unique-sable-f229dd.netlify.app/',
 		icons:[IoLogoFigma],
-		category:"UI/UX Development",
+		category:"UI/UX Designing",
 	},
 	
 	{
@@ -154,7 +154,7 @@ const projectsData = [
 		image:require('../images/projects/power-2.png'),
 		deploylink:'https://app.fabric.microsoft.com/groups/me/reports/59e1354c-6e74-4eb3-a4ca-c1e7d5054136/ReportSectione719ef80db76ae2815d3?experience=power-bi',
 		icons:[SiMicrosoftexcel ],
-		category:"PowerBi",
+		category:"PowerBI",
 	},
 	{
 		id:16,
@@ -164,7 +164,7 @@ const projectsData = [
 		image:require('../images/projects/power-3.png'),
 		deploylink:'https://app.fabric.microsoft.com/groups/me/reports/1c9ea9bf-94d4-4fd0-aa94-e22b47cc7016/ReportSection?experience=power-bi',
 		icons:[SiMicrosoftexcel ],
-		category:"PowerBi",
+		category:"PowerBI",
 	},
 		
 ];
