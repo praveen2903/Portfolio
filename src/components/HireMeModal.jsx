@@ -4,9 +4,9 @@ import Button from './reusable/Button';
 
 const selectOptions = [
 	'Web Application',
-	'Mobile Application',
+	'Machine Learning',
 	'UI/UX Design',
-	'Branding',
+	'PowerBI',
 ];
 
 const HireMeModal = ({ onClose, onRequest }) => {
