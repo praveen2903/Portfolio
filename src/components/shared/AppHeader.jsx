@@ -1,23 +1,33 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import HireMeModal from '../HireMeModal';
 import { motion } from 'framer-motion';
 import logo from '../../images/logo.png'
 import Button from '../reusable/Button';
 
+
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
 	const [showModal, setShowModal] = useState(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
+	const location = useLocation();
+	const timeoutRef = useRef(null);
 
 	function toggleMenu() {
 		if (!showMenu) {
 			setShowMenu(true);
 		} else {
-			setShowMenu(false);
+			timeoutRef.current = setTimeout(() => {
+				setShowMenu(false);
+			  }, 2000);
 		}
+	}
+
+	function handleMenuItemClick() {
+		
+		setShowMenu(false);
 	}
 
 	function showHireMeModal() {
@@ -99,8 +109,9 @@ const AppHeader = () => {
 				>
 					<Link
 						to="/projects"
-						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
+						onClick={handleMenuItemClick}
 					>
 						Projects
 					</Link>
@@ -108,6 +119,7 @@ const AppHeader = () => {
 						to="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="About Me"
+						onClick={handleMenuItemClick}
 					>
 						About Me
 					</Link>
@@ -115,6 +127,7 @@ const AppHeader = () => {
 						to="/achievements"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="About Me"
+						onClick={handleMenuItemClick}
 					>
 						Milestones
 					</Link>
@@ -122,6 +135,7 @@ const AppHeader = () => {
 						to="/contact"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="Contact"
+						onClick={handleMenuItemClick}
 					>
 						Contact
 					</Link>
@@ -140,28 +154,28 @@ const AppHeader = () => {
 				<div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
 					<Link
 						to="/projects"
-						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						className={`block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 ${location.pathname==='/projects'? 'glowing-header text-blue-600':''}`}
 						aria-label="Projects"
 					>
 						Projects
 					</Link>
 					<Link
 						to="/about"
-						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						className={`block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 ${location.pathname==='/about'? 'glowing-header text-blue-600':''}`}
 						aria-label="About Me"
 					>
 						About Me
 					</Link>
 					<Link
 						to="/achievements"
-						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						className={`block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 ${location.pathname==='/achievements'? 'glowing-header text-blue-600':''}`}
 						aria-label="About Me"
 					>
 						Milestones
 					</Link>
 					<Link
 						to="/contact"
-						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						className={`block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 ${location.pathname==='/contact'? 'glowing-header text-blue-600':''}`}
 						aria-label="Contact"
 					>
 						Contact

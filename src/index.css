@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.glowing-header {
+    animation: glow 1.5s ease-in-out infinite alternate;
+    padding:10px;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px 5px #fff, 0 0 20px 10px #00f;
+    }
+    to {
+      box-shadow: 0 0 15px 10px #fff, 0 0 30px 15px #00f;
+    }
+  }
+  

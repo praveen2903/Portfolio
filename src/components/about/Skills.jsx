@@ -1,5 +1,6 @@
 import React from 'react'
 import SkillsData from '../../data/SkillsData'
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   return (
@@ -17,7 +18,11 @@ const Skills = () => {
           {SkillsData.map((Skill) => {
             return (
               <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-once="false" key={Skill.id} className="flex flex-col w-20 h-20 items-center justify-center md:w-24 md:h-24 lg:m-3 xl:m-5 mx-auto">
-                <img src={Skill.image} alt={Skill.name} className="m-2 object-cover w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 transition duration-700 hover:scale-125"/>
+                <motion.img initial={{ opacity: 0 }} 
+                            animate={{ opacity: 1 }} 
+                            transition={{ delay: 0.5 }} 
+                            src={Skill.image} alt={Skill.name} 
+                            className="m-2 object-cover w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 transition duration-700 hover:scale-125"/>
                 <p className='text-center text-primary-dark dark:text-primary-light'>{Skill.name}</p>
               </div>
             );

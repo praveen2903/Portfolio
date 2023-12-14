@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../../Variants";
 function AppFooterCopyright() {
 	return (
-		<div className="font-general-regular flex justify-center items-center text-center">
+		<motion.div variants={fadeIn("up",0.7)} initial="hidden" whileInView={"show"} viewport={{once:false,amount:0.3}} className="font-general-regular flex justify-center items-center text-center">
 			<div className="text-lg text-ternary-dark dark:text-ternary-light">
 				&copy; {new Date().getFullYear()}
 				<a
@@ -12,7 +14,7 @@ function AppFooterCopyright() {
 				</a>
 				
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 
