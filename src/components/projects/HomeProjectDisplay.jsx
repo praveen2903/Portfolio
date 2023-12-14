@@ -6,7 +6,7 @@ import ProjectsFilter from './ProjectsFilter';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../Variants';
 
-const ProjectsGrid = () => {
+const HomeProjectDisplay = () => {
     const {
         projects,
         searchProject,
@@ -16,6 +16,11 @@ const ProjectsGrid = () => {
         setSelectProject,
         selectProjectsByCategory,
     } = useContext(ProjectsContext);
+    const displayProjects = selectProject
+                            ? selectProjectsByCategory
+                            : searchProject
+                            ? searchProjectsByTitle
+                            : projects.slice(0, 5);
 
     return (
         <section className="py-5 sm:py-10 mt-5 sm:mt-10">
@@ -88,44 +93,20 @@ const ProjectsGrid = () => {
             </motion.div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-                {selectProject
-                    ? selectProjectsByCategory.map((project) => (
-                        <ProjectSingle
-                            image={project.image}
-                            title={project.title}
-                            description={project.description}
-                            gitlink={project.gitlink}
-                            deploylink={project.deploylink}
-                            icons={project.icons}
-                            key={project.id}
-                        />
-                    ))
-                    : searchProject
-                        ? searchProjectsByTitle.map((project) => (
-                            <ProjectSingle
-                                image={project.image}
-                                title={project.title}
-                                description={project.description}
-                                gitlink={project.gitlink}
-                                deploylink={project.deploylink}
-                                icons={project.icons}
-                                key={project.id}
-                            />
-                        ))
-                        : projects.map((project) => (
-                            <ProjectSingle
-                                image={project.image}
-                                title={project.title}
-                                description={project.description}
-                                gitlink={project.gitlink}
-                                deploylink={project.deploylink}
-                                icons={project.icons}
-                                key={project.id}
-                            />
-                        ))}
+                {displayProjects.map((project) => (
+                <ProjectSingle
+                    image={project.image}
+                    title={project.title}
+                    description={project.description}
+                    gitlink={project.gitlink}
+                    deploylink={project.deploylink}
+                    icons={project.icons}
+                    key={project.id}
+                />
+                ))}
             </div>
         </section>
     );
 };
 
-export default ProjectsGrid;
+export default HomeProjectDisplay;
