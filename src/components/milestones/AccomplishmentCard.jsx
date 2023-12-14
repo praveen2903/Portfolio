@@ -10,7 +10,7 @@ import {
 const AccomplishmentCard = ({image,title,description}) => {
     return (
         <div>
-          <Card className="mt-6 mx-auto p-6">
+          <Card className="mt-6 p-6 mx-8 bg-primary-dark dark:bg-primary-light">
           <CardHeader color="blue-gray" className="h-56 overflow-hidden">
             <img
               src={image}
@@ -19,10 +19,10 @@ const AccomplishmentCard = ({image,title,description}) => {
             />
           </CardHeader>
           <CardBody className='p-3'>
-            <Typography variant="h5" color="blue-gray" className="mb-2 text-primary-dark">
+            <Typography variant="h5" color="blue-gray" className="mb-2 text-primary-light dark:text-primary-dark">
               {title}
             </Typography>
-            <Typography className='text-primary-dark'>
+            <Typography className='text-primary-light dark:text-primary-dark'>
               {description}
             </Typography>
           </CardBody>

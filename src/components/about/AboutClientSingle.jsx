@@ -10,7 +10,7 @@ import {
    
   export default function AboutClientSingle({image,title,description,link}) {
 	return (
-	  <Card className="w-full max-w-[26rem] shadow-lg mb-4 text-lg text-justify p-5">
+	  <Card className="w-full max-w-[26rem] shadow-lg mb-4 text-lg text-justify p-5 bg-primary-dark dark:bg-primary-light">
 		<CardHeader floated={false} color="blue-gray">
 		  <img
 			src={image}
@@ -20,11 +20,11 @@ import {
 		</CardHeader>
 		<CardBody>
 		  <div className="mb-3 flex items-center justify-between">
-			<Typography variant="h5" color="blue-gray" className="font-bold text-center">
+			<Typography variant="h5" color="blue-gray" className="font-bold text-center text-primary-light dark:text-primary-dark">
 			  {title}
 			</Typography>
 		  </div>
-		  <Typography color="gray">
+		  <Typography className="text-primary-light dark:text-primary-dark">
 			{description}
 		  </Typography>
 		</CardBody>

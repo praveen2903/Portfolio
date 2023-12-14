@@ -11,14 +11,14 @@ const ExperienceData = [
 		id: 2,
 		title: 'Geeks for Geeks',
 		img: require('../images/achievements/gfg.png'),
-		description:"I have done many of the Data Structures and Algorithms DSA problems in GfG and I am standing currently 2nd in my Institution in the ranking of geeks for geeks and have 250 geek bits.",
+		description:"I have done many of the Data Structures and Algorithms DSA problems in GfG and I am standing currently 2nd in my Institution in the ranking of geeks for geeks and have 250 geek bits. I have learned the topics such as dynamic programming, Greedy algorithm, trees and graph algorithms by solving the DSA problems in Geeks for Geeks.",
 		link:"https://auth.geeksforgeeks.org/user/vvit20bq1a05l0",
 	},
 	{
 		id: 3,
 		title: 'LeetCode',
 		img: require('../images/achievements/leetcode.png'),
-		description:"LeetCode is a popular online platform that offers a vast collection of coding challenges designed to improve algorithmic and problem-solving skills. These problems cover a wide range of difficulty levels and topics, including arrays, strings, linked lists, trees, dynamic programming, and more.	",
+		description:"LeetCode is a popular online platform that offers a vast collection of coding challenges designed to improve algorithmic and problem-solving skills. These problems cover a wide range of difficulty levels and topics, including arrays, strings, linked lists, trees, dynamic programming, and more.I have learned the topics such as dynamic programming, Greedy algorithm, trees and graph algorithms by solving the DSA problems in Leetcode.",
 		link:"https://leetcode.com/Rokkamsaipraveen/",
 	},
 	{

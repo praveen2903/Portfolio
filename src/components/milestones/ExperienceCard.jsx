@@ -10,7 +10,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
  
 export default function ExperienceCard({image,title,description,link}) {
   return (
-    <Card className="mt-6 p-6 mx-auto">
+    <Card className="mt-6 p-6 mx-8 bg-primary-dark dark:bg-primary-light">
       <CardHeader shadow={false} floated={false} className="h-96 overflow-hidden">
         <img
           src={image}
@@ -20,13 +20,13 @@ export default function ExperienceCard({image,title,description,link}) {
       </CardHeader>
       <CardBody>
         <div className="mb-2 flex items-center justify-between">
-          <Typography color="blue-gray" className="font-bold text-xl text-primary-dark">
+          <Typography color="blue-gray" className="font-bold text-xl text-primary-light dark:text-primary-dark">
             {title}
           </Typography>
         </div>
         <Typography
           variant="small"
-          className="font-semibold opacity-75 text-primary-dark text-justify"
+          className="font-semibold opacity-75 text-primary-light dark:text-primary-dark text-justify"
         >
           {description}
         </Typography>

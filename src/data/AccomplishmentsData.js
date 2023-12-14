@@ -15,25 +15,25 @@ const AccomplishmentsData = [
 		id: 2,
 		title: 'Azure Certification',
 		img: numpyblog,
-		description:"Microsoft Azure (AZ-204) is a robust cloud computing platform that empowers organizations to build, deploy, and manage applications on a global scale. Offering a comprehensive suite of services, Azure spans computing resources with Virtual Machines and Azure Kubernetes Service, diverse storage solutions like Blob Storage and Azure SQL Database, and a range of networking, identity, and security tools.",
+		description:"Microsoft Azure (AZ-204) is a robust cloud computing platform that empowers organizations to build, deploy, and manage applications on a global scale. Offering a comprehensive suite of services, Azure spans computing resources with Virtual Machines and Azure Kubernetes Services and etc..",
 	},
 	{
 		id: 3,
 		title: 'Salesforce certification',
 		img: pandasblog,
-		description:"Salesforce stands as a prominent cloud-based Customer Relationship Management (CRM) platform, playing a pivotal role in enhancing customer interactions and business processes. With its Sales Cloud, organizations can efficiently manage sales cycles, opportunities, and customer relationships. Service Cloud focuses on customer service, offering tools for case management and self-service portals.",
+		description:"Salesforce stands as a prominent cloud-based Customer Relationship Management (CRM) platform, playing a pivotal role in enhancing customer interactions and business processes. With its Sales Cloud, organizations can efficiently manage sales cycles, opportunities, and customer relations (CRM).",
 	},
 	{
 		id: 4,
 		title: 'FrontEnd Development',
 		img: firebase,
-		description:"Frontend development involves creating the user interface and user experience of a website or web application. Frontend developers use languages such as HTML, CSS, and JavaScript to build the visual elements that users interact with directly in their web browsers. HTML defines the structure of the content, CSS styles the layout.",
+		description:"Frontend development involves creating the user interface and user experience of a website or web application. Frontend developers use languages such as HTML, CSS, and JavaScript to build the visual elements that users interact with directly in their web browsers. HTML defines the Structure.  ",
 	},
 	{
 		id: 5,
 		title: 'Microsoft PowerBI',
 		img: tailwindcss,
-		description:"Power BI is a business analytics service by Microsoft that empowers organizations to visualize and analyze their data effectively. With intuitive drag-and-drop functionality, Power BI enables users to create interactive and customizable reports and dashboards. It connects to a variety of data sources, transforms raw data into meaningful insights.",
+		description:"Power BI is a business analytics service by Microsoft that empowers organizations to visualize and analyze their data effectively. With intuitive drag-and-drop functionality, Power BI enables users to create interactive and customizable reports and dashboards. It connects to a variety of data.",
 	},
 ];
 export default AccomplishmentsData
