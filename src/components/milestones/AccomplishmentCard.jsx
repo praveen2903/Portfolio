@@ -22,7 +22,7 @@ const AccomplishmentCard = ({image,title,description}) => {
             <Typography variant="h5" color="blue-gray" className="mb-2 text-primary-light dark:text-primary-dark">
               {title}
             </Typography>
-            <Typography className='text-primary-light dark:text-primary-dark'>
+            <Typography className='text-primary-light dark:text-primary-dark text-justify font-serif'>
               {description}
             </Typography>
           </CardBody>
