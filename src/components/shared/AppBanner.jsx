@@ -3,6 +3,7 @@ import { FiArrowDownCircle } from 'react-icons/fi';
 import developerLight from '../../images/developer.svg';
 import developerDark from '../../images/developer-dark.svg';
 import { motion } from 'framer-motion';
+import { Typewriter } from 'react-simple-typewriter';
 
 const AppBanner = () => {
 	const [activeTheme] = useThemeSwitcher();
@@ -35,9 +36,10 @@ const AppBanner = () => {
 						duration: 0.9,
 						delay: 0.2,
 					}}
-					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+					className="font-general-medium text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200 mt-5"
 				>
-					A Front end Developer & Machine Learning Engineer
+					<span className="text-darkblue">{"_ "}</span>
+					<Typewriter words={['FrontEnd Developer','Python Programmer','UI/UX Designer','PowerBi Analyst','ML Engineer','React Developer',"Data Scientist"]} loop={false} typeSpeed={100} deleteSpeed={200} delaySpeed={1000}/> 
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}

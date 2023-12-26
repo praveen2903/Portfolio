@@ -54,9 +54,9 @@ const AppHeader = () => {
 			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
-						<Link to="/" className='text-3xl font-bold font-serif flex gap-5'>
-							<img src={logo} alt='praveen' className='h-[60px] w-[60px] rounded-full' />
-							<div className='mt-6'>
+						<Link to="/" className='text-xl md:text-3xl font-bold font-serif flex gap-5'>
+							<img src={logo} alt='praveen' className='h-[40px] w-[40px] md:h-[60px] md:w-[60px] rounded-full' />
+							<div className='mt-2 md:mt-4'>
 								{activeTheme === 'dark' ? (
 									<p className="w-36 text-black">Praveen</p>
 								) : (

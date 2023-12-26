@@ -44,7 +44,7 @@ const ContactDetails = () => {
 				initial={{x:-100}}
 				whileInView={{x:0}}
 				transition={{duration:0.7}}>
-				<div className="flex flex-col items-center justify-center gap-10 ">
+				<div className="flex flex-col items-center justify-center gap-10 mt-3">
 					<div className="flex w-4/5 gap-2 md:flex-col items-center py-2 px-2 md:px-4 md:w-auto bg-stone-700 text-white rounded-md">
 						<div>
 							<FaPhoneAlt />
