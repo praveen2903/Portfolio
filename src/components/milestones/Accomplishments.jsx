@@ -52,27 +52,34 @@ const Accomplishments = () => {
           ))}
         </Slider>
         <style>{`
-                  /* Left Arrow */
-                  .slick-prev:before {
-                      color: #0369a1;
-                      font-size: 30px;
-                      margin-left: 8px;
-                  }
+          /* Left Arrow */
+          .slick-prev:before {
+            color: #0369a1;
+            font-size: 30px;
+            margin-left: 8px;
+          }
 
-                  /* Right Arrow */
-                  .slick-next:before {
-                      color: #0369a1;
-                      font-size: 30px;
-                      margin-right: 8px;
-                  }
+          /* Right Arrow */
+          .slick-next:before {
+            color: #0369a1;
+            font-size: 30px;
+            margin-right: 8px;
+          }
 
-                  /* Ensure arrows are visible on small screens */
-                  .slick-prev, .slick-next {
-                      @media only screen and (max-width: 768px) {
-                          font-size: 20px;
-                      }
-                  }
-              `}</style>
+          /* Ensure arrows are visible on larger screens */
+          @media only screen and (max-width: 768px) {
+            .slick-prev, .slick-next {
+              display: none !important;
+            }
+          }
+
+          /* Adjust arrow size on smaller screens */
+          @media only screen and (max-width: 768px) {
+            .slick-prev:before, .slick-next:before {
+              font-size: 20px;
+            }
+          }
+        `}</style>
       </div>
     </div>
   );
