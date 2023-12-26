@@ -29,11 +29,11 @@ const ContactDetails = () => {
 				</h2>
 				<ul className="font-general-regular">
 					{contacts.map((contact) => (
-						<li className="flex " key={contact.id}>
-							<i className="text-2xl text-gray-500 dark:text-gray-400 mr-4">
+						<li className="flex" key={contact.id}>
+							<i className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 mr-4">
 								{contact.icon}
 							</i>
-							<span className="text-lg mb-4 text-ternary-dark dark:text-ternary-light">
+							<span className="text-lg mb-4 text-ternary-dark dark:text-ternary-light text-[13px] md:text-[16px]">
 								{contact.name}
 							</span>
 						</li>
@@ -56,7 +56,7 @@ const ContactDetails = () => {
 						<HiMail />
 						</div>
 						<p>
-						<a href="mailto:rokkamsaipraveen5l0@gmail.com" className="text-white cursor-pointer hover:text-white">rokkamsaipraveen5l0@gmail.com</a>
+						<a href="mailto:rokkamsaipraveen5l0@gmail.com" className="text-white cursor-pointer hover:text-white text-[12px] md:text-[16px]">rokkamsaipraveen5l0@gmail.com</a>
 						</p>
 					</div>
 				</div>
