@@ -19,7 +19,7 @@ const AccomplishmentsData = [
 	},
 	{
 		id: 3,
-		title: 'Salesforce certification',
+		title: 'Salesforce Internship',
 		img: pandasblog,
 		description:"Salesforce stands as a prominent cloud-based Customer Relationship Management (CRM) platform, playing a pivotal role in enhancing customer interactions and business processes. With its Sales Cloud, organizations can efficiently manage sales cycles, opportunities, and customer relations (CRM).",
 	},
