@@ -98,7 +98,7 @@ const SkillsData = [
     },
     {
       id: "20",
-      name: "UI/UX designing",
+      name: "Figma",
       image: require("../images/skills/figma.png"),
     },
   ];
