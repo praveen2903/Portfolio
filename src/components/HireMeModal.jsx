@@ -26,7 +26,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 					<div className="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative">
 						<div className="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark">
 							<h5 className=" text-primary-dark dark:text-primary-light text-xl">
-								What project are you looking for?
+								What domain are you interested in?
 							</h5>
 							<button
 								onClick={onClose}

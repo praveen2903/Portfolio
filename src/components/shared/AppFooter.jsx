@@ -1,9 +1,9 @@
 import {
 	FiGithub,
-	FiTwitter,
 	FiLinkedin,
 	FiFacebook,
 } from 'react-icons/fi';
+import { FaXTwitter } from "react-icons/fa6";
 import AppFooterCopyright from './AppFooterCopyright';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../Variants';
@@ -21,7 +21,7 @@ const socialLinks = [
 	},
 	{
 		id: 3,
-		icon: <FiTwitter />,
+		icon: <FaXTwitter />,
 		url: 'https://twitter.com/SaiPraveen2903',
 	},
 	{
@@ -47,7 +47,7 @@ const AppFooter = () => {
 								key={link.id}
 								className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4 duration-300"
 							>
-								<i className="text-xl sm:text-2xl md:text-3xl">
+								<i className="text-xl sm:text-2xl md:text-4xl">
 									{link.icon}
 								</i>
 							</a>
