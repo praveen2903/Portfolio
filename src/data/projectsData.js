@@ -1,7 +1,8 @@
 import { BiLogoCss3, BiLogoFirebase, BiLogoMongodb, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss } from "react-icons/bi";
 import {TiWeatherCloudy } from 'react-icons/ti'
 import { IoLogoFigma } from "react-icons/io5";
-import { SiMicrosoftexcel, SiNumpy, SiPandas, SiScikitlearn } from "react-icons/si";
+import {  SiNumpy, SiPandas, SiScikitlearn } from "react-icons/si";
+import { SiPowerbi } from "react-icons/si";
 
 const projectsData = [
 	{
@@ -41,7 +42,7 @@ const projectsData = [
 		gitlink:"https://app.fabric.microsoft.com/groups/me/reports/054df2b7-1284-4dc7-82ba-35f0d598cfa1/ReportSectione719ef80db76ae2815d3?experience=power-bi",
 		image:require('../images/projects/power-1.png'),
 		deploylink:'https://app.fabric.microsoft.com/groups/me/reports/054df2b7-1284-4dc7-82ba-35f0d598cfa1/ReportSectione719ef80db76ae2815d3?experience=power-bi',
-		icons:[SiMicrosoftexcel ],
+		icons:[SiPowerbi ],
 		category:"PowerBI",
 	},
 	{
@@ -153,7 +154,7 @@ const projectsData = [
 		gitlink:"https://app.fabric.microsoft.com/groups/me/reports/59e1354c-6e74-4eb3-a4ca-c1e7d5054136/ReportSectione719ef80db76ae2815d3?experience=power-bi",
 		image:require('../images/projects/power-2.png'),
 		deploylink:'https://app.fabric.microsoft.com/groups/me/reports/59e1354c-6e74-4eb3-a4ca-c1e7d5054136/ReportSectione719ef80db76ae2815d3?experience=power-bi',
-		icons:[SiMicrosoftexcel ],
+		icons:[SiPowerbi ],
 		category:"PowerBI",
 	},
 	{
@@ -163,7 +164,7 @@ const projectsData = [
 		gitlink:"https://app.fabric.microsoft.com/groups/me/reports/1c9ea9bf-94d4-4fd0-aa94-e22b47cc7016/ReportSection?experience=power-bi",
 		image:require('../images/projects/power-3.png'),
 		deploylink:'https://app.fabric.microsoft.com/groups/me/reports/1c9ea9bf-94d4-4fd0-aa94-e22b47cc7016/ReportSection?experience=power-bi',
-		icons:[SiMicrosoftexcel ],
+		icons:[SiPowerbi ],
 		category:"PowerBI",
 	},
 		

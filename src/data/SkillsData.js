@@ -97,10 +97,20 @@ const SkillsData = [
       image: require("../images/skills/Ai.avif"),
     },
     {
+      id:'22',
+      name:"Microsoft Azure",
+      image:require("../images/skills/azure.jpg"),
+    },
+    {
       id: "20",
       name: "Figma",
       image: require("../images/skills/figma.png"),
     },
+    {
+      id:'21',
+      name:"Microsoft PowerBI",
+      image:require("../images/powerbi.png"),
+    }
   ];
   
   export default SkillsData;
