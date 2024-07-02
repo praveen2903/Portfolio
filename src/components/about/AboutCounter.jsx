@@ -20,7 +20,7 @@ const AboutCounter = () => {
   const techPercentageCounter = useCountUp({
     ref: techPercentageCounterRef,
     start: isVisible ? null : 0,
-    end: 88,
+    end: 90,
     duration: 2,
   });
 
